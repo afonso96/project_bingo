@@ -21,6 +21,7 @@ from person.urls import person_routers
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('accounts/', include('allauth.urls')),
     path("", include(classes_router.urls)),
     path("", include(person_routers.urls))
 
