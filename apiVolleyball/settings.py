@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
      #Django Apps
     "rest_framework",
+    "drf_spectacular",
     # My APPS
     "classes",
     "person",
@@ -129,3 +130,15 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Project Bingo',
+    'DESCRIPTION': 'API',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
