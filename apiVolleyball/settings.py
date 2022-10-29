@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -81,11 +82,14 @@ WSGI_APPLICATION = "apiVolleyball.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'supimpapostgres',
+        'USER': 'supimpa',
+        'PASSWORD': 'Alemanha@2023',
+        'HOST': 'supimpapostegress.postgres.database.azure.com',
+        'PORT': '5432',
     }
 }
 
