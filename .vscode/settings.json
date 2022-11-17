@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0891dc93-246f-4f45-83af-2af9509c2b8a/AppServices/subscriptions/0891dc93-246f-4f45-83af-2af9509c2b8a/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/APIVoley",
+    "appService.deploySubpath": "."
+}
